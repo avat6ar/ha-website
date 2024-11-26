@@ -1,0 +1,18 @@
+.banner {
+  background-image: url("/images/breadcrumb_bg.webp");
+}
+
+.checkbox:checked {
+  background-image: url("/images/download.svg");
+}
+
+.accordionButton:after {
+  background-image: url("/images/download\ \(1\).svg");
+}
+
+.play::before {
+  background-image: url("/images/play.svg");
+}
+.cta__bg {
+  background-image: url("/images/cta_bg.webp");
+}
