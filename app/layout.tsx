@@ -7,18 +7,58 @@ import { Hind, Lexend_Deca } from "next/font/google";
 import StoreProvider from "./StoreProvider";
 import { Loading } from "@/components/Loading";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import localFont from "next/font/local";
 
-const hind = Hind({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+const hind = localFont({
+  src: [
+    {
+      path: "../public/fonts/Hind-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Hind-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Hind-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Hind-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    { path: "../public/fonts/Hind-Bold.ttf", weight: "700", style: "normal" },
+  ],
   variable: "--font-body",
 });
 
-const lexend = Lexend_Deca({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
+const lexend = localFont({
+  src: [
+    {
+      path: "../public/fonts/LexendDeca-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LexendDeca-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LexendDeca-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LexendDeca-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-heading",
 });
 
@@ -70,6 +110,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className={`bg-white w-full relative font-body text-[16px] font-normal leading-[1.75] text-[#39557E] ${hind.variable} ${lexend.variable}`}
       >
+        <div className="font-me"></div>
         <AppProgressBar
           height="4px"
           color="#1363DF"
