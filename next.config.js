@@ -2,7 +2,9 @@
 const nextConfig = {
   images: {
     domains: ["hatcacademy.com"],
-    unoptimized: true
+  },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
   },
 }
 
