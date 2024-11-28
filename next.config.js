@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["hatcacademy.com"],
+    domains: ["softcitadel.com"],
+    unoptimized: false
   },
   experimental: {
     missingSuspenseWithCSRBailout: false,
