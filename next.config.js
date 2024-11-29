@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["softcitadel.com"],
+    domains: ["hatcacademy.com"],
     unoptimized: false
   },
   experimental: {

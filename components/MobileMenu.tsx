@@ -123,7 +123,7 @@ export const MobileMenu = ({
             <ul className="flex pt-[30px] px-[20px] justify-center gap-[15px] items-center">
               <li className="block relative">
                 <Link
-                  href="/login"
+                  href="/auth/login"
                   onClick={closeMenu}
                   className="py-[12px] px-[21px] text-[#5A7093] font-medium border border-[#D0DAE9] bg-white capitalize inline-block tracking-[0.5px] leading-[1] text-center rounded-[4px] font-body"
                 >
@@ -132,7 +132,7 @@ export const MobileMenu = ({
               </li>
               <li className="block relative">
                 <Link
-                  href="/signup"
+                  href="/auth/signup"
                   onClick={closeMenu}
                   className="py-[12px] px-[21px] text-white font-medium border border-[#D0DAE9] bg-[#1363DF] capitalize inline-block tracking-[0.5px] leading-[1] text-center rounded-[4px] font-body"
                 >
